@@ -19,12 +19,10 @@
 ![マッチング画面](screen4.png) 
 
 ## 使った文法・技術
-
-（例：`@State`、`List`、`ForEach`、構造体、配列の `append` と `remove`）
+SwiftUI、`@State`、`NavigationLink`、`VStack`、`TextField`、`TextEditor`、`ForEach`、配列、`contains`、`append`、`removeAll`、`if`文、SwiftData、GitHub、Supabase
 
 ## 生成AIの使い方（どの場面で、どう使ったか）
 画面の骨組みはChatGPTに書いてもらった。GitHubの使い方や、コンフリクトの解消方法を質問して解決した。
 
 ## 展示で工夫した点
-
-（例：文字を大きくして、来場者が操作しやすいようにした。）
+初めて使う来場者でも迷わず操作できるように、プロフィール入力からMBTI診断、デジタル名刺の作成まで、順番に進められる画面構成を意識した。また、好きなことを3つ選べるようにし、来場者同士の共通点を見つけやすくした。
