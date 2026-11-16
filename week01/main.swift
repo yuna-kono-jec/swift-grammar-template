@@ -129,7 +129,6 @@ for i in 0..<names.count {
     }
 }
 print(passers)
-// ここに書く
 
 check("演習1 合格者は4名", passers.count == 4)
 check("演習1 並び順は names のまま", passers == ["電子太郎", "山田一郎", "佐藤みなみ", "グエン・アン"])
@@ -137,7 +136,11 @@ check("演習1 並び順は names のまま", passers == ["電子太郎", "山�
 // 演習2: scoreOf を for-in で回して、80点以上の人数を highScorers に入れてください
 
 var highScorers = 0
-// ここに書く
+for (_, score) in scoreOf {
+    if score >= 80 {
+        highScorers += 1
+    }
+}
 
 check("演習2 80点以上は2名", highScorers == 2)
 
@@ -146,7 +149,12 @@ check("演習2 80点以上は2名", highScorers == 2)
 
 var total = 0
 var average = 0.0
-// ここに書く
+
+for score in scores {
+    total += score
+}
+
+average = Double(total) / Double(scores.count)
 
 check("演習3 合計は360", total == 360)
 check("演習3 平均は72.0", average == 72.0)
